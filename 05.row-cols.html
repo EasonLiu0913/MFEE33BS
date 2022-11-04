@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello world</title>
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+
+<body>
+    <!-- HTML -->
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
+            <div class="col">
+                <div class="box autobg">box1</div>
+            </div>
+            <div class="col">
+                <div class="box autobg">box2</div>
+            </div>
+            <div class="col">
+                <div class="box autobg">box3</div>
+            </div>
+            <div class="col">
+                <div class="box autobg">box4</div>
+            </div>
+            <div class="col">
+                <div class="box autobg">box5</div>
+            </div>
+            <div class="col">
+                <div class="box autobg">box6</div>
+            </div>
+            <div class="col">
+                <div class="box autobg">box7</div>
+            </div>
+            <div class="col">
+                <div class="box autobg">box8</div>
+            </div>
+            <div class="col">
+                <div class="box autobg">box9</div>
+            </div>
+            <div class="col">
+                <div class="box autobg">box10</div>
+            </div>
+            <div class="col">
+                <div class="box autobg">box11</div>
+            </div>
+            <div class="col">
+                <div class="box autobg">box12</div>
+            </div>
+        </div>
+    </div>
+
+
+    <ul>
+        <li>
+            <a href="#">link1</a>
+        </li>
+        <li>
+            <a href="#">link2</a>
+        </li>
+    </ul>
+
+    <ul id="navMenu">
+        <li><a href="#" class="link1">link1</a></li>
+        <li><a href="#" class="link2">link2</a></li>
+        <li><a href="#" class="link3">link3</a></li>
+        <li><a href="#" class="link4">link4</a></li>
+        <li><a href="#" class="link5">link5</a></li>
+        <li><a href="#" class="link6">link6</a></li>
+    </ul>
+
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script>
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max - 50) + 100);
+        }
+
+        function getRBGA() {
+            return `linear-gradient(135deg, rgba(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)},.5), rgba(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)},.8)`
+        }
+
+        const elements = document.querySelectorAll('.autobg');
+
+        Array.from(elements).forEach((element, index) => {
+            element.style.backgroundImage = getRBGA();
+        });
+
+        // $('.autobg').each(function (index, currentElement) {
+        //     currentElement.style.backgroundImage = getRBGA();
+        // });
+    </script>
+</body>
+
+</html>

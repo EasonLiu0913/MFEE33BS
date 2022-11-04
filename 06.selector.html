@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        #idLi {
+            color: aqua;
+        }
+
+        li:first-child {
+            color: blue;
+        }
+
+        li:not(:first-child) {
+            color: chocolate;
+        }
+
+        .myLi~li {
+            color: crimson;
+        }
+
+        a[href="https://google.com"] {
+            color: cadetblue;
+        }
+
+        img[src="#"] {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://google.com">google</a>
+    <a href="https://bootstrap5.hexschool.com/">bootstrap</a>
+
+
+    <ul>
+        <li class="myLi">1</li>
+        <li>2</li>
+        <li>3</li>
+        <span>3.5</span>
+        <li id="idLi" style="color: yellow;">4</li>
+        <li>5</li>
+    </ul>
+
+    <form action="">
+
+        <div class="form-group">
+            <label for="">username</label>
+            <input type="text">
+        </div>
+
+    </form>
+</body>
+
+</html>
