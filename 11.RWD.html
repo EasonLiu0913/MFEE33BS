@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD</title>
+    <style>
+        /* HEADER */
+        /* 桌機優先 */
+        #header h2 {
+            color: aquamarine;
+        }
+
+        /* 平板 */
+        @media screen and (max-width:992px) {
+            #header h2 {
+                color: brown;
+            }
+        }
+
+        /* 手機 */
+        @media screen and (max-width:576px) {
+            #header h2 {
+                color: red;
+            }
+        }
+
+        /* HERO　SECTION */
+        /* 桌機優先 */
+
+        #heroSection h2 {
+            color: aquamarine;
+        }
+
+        /* 平板 */
+        @media screen and (min-width:577px) and (max-width:992px) {
+            #heroSection h2 {
+                color: brown;
+            }
+        }
+
+        /* 手機 */
+        @media screen and (max-width:576px) {
+            #heroSection h2 {
+                color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header">
+        <h2>Header</h2>
+    </header>
+
+    <main>
+        <section id="heroSection">
+            <h2>Hero section</h2>
+        </section>
+        <section></section>
+        <section></section>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>
